@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="David Turner- from Android and IOS apps to front end Java and JSTL through to the back end APIs and servers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>A Sample of David Turner's Portfolio</title>
+    <title>David Turner's Blog</title>
 
     <!-- Homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -66,7 +66,7 @@
             </div>
           </div>
           <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent" onClick="addFacebook();">
               <i class="material-icons mdl-color-text--white" role="presentation">add</i>
               <span class="visuallyhidden">add</span>
             </button>
@@ -79,10 +79,10 @@
                 <strong>David Turner</strong>
               </div>
               <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
-                <li class="mdl-menu__item">About</li>
-                <li class="mdl-menu__item">Message</li>
-                <li class="mdl-menu__item">Favorite</li>
-                <li class="mdl-menu__item">Search</li>
+                <li class="mdl-menu__item" onClick="aboutDave();">About</li>
+                <li class="mdl-menu__item" onClick="emailDave();">Message</li>
+                <li class="mdl-menu__item" onClick="latest();">Latest</li>
+                <li class="mdl-menu__item" onClick="bcs();">Charted Insitute for IT - my BCS</li>
               </ul>
               <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                 <i class="material-icons" role="presentation">more_vert</i>
@@ -92,11 +92,9 @@
           </div>
           <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">On the road again</a></h3>
+              <h3><a href="entry.html">Welcome to my blog on programming voyages of discovery...</a></h3>
             </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">From an early age I've enjoyed making countless websites for businesses and for friends, I've learnt a lot about the servers that serve them up to wide world to the code that lets the user have the best stories and interaction possible. I've developed IOS apps and Andriod apps that millions have enjoyed. I hope you'll enjoy my blog and let me know what you think about my journey through programming...</div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
@@ -107,10 +105,10 @@
           </div>
           <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
             <div class="mdl-card__title mdl-color-text--grey-50">
-              <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
+              <h3 class="quote"><a href="entry.html">Amazing - the latest - work at EE on Android Studio, IOS's XCode and Amazon Web Services IASS…</a></h3>
             </div>
             <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+              <p>This week I've just returned from the Leeds office of EE. I've been there learning all about the best technology the world can offer. EE use Amazon's AWS to create virtual servers. I was amazed that I could stand up a server, attach an IP address, attach a domain name to the IP address and upload webpages all within 15 minutes! The elastic load balancers meant that if the 30 million EE customers came through my new addition to EE all at once they would all be served without any compromise in data speed or security. &nbsp;I fully recommend AWS - check our their machine learning too! &nbsp;Visit <a href="https://aws.amazon.com/what-is-aws/">https://aws.amazon.com/what-is-aws/</a> for more.</p>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
@@ -122,11 +120,9 @@
           </div>
           <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Shopping</a></h3>
+              <h3>DXC Technology..</h3>
             </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600" a href="#latest">I was lucky enough to witness the moment the UK's leading independent, end to end IT services and solutions company merge with Hewlett Packard of the USA. I'd been teaching non programming specialists how to code at their Chorley office. A far cry from teaching teenagers the basics of HTML, CSS, Javascript or Python! CSC was a global player serving technology up to companies such as BAE and the big four supermarket chains however they are now an enormous business with the resources and capability to compete with the very biggest companies globally. I hope what I taught their colleagues helps them to continue to go from strength to strength! Platform independent Java EE and its' ever expanding libraries should help them on their way! </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
@@ -185,4 +181,29 @@
       });
     });
   </script>
+  <script>
+function emailDave() {
+    window.location="mailto:rachelanddavids@gmail.com? Subject=Hello David";
+}
+</script>
+<script>
+function aboutDave() {
+    window.location="https://www.linkedin.com/in/david-turner-51ba44130";
+}
+</script>
+<script>
+function latest() {
+	window.location="https://sites.google.com/view/iamdavidturner/home";
+}
+</script>
+<script>
+function bcs() {
+	window.location="http://www.bcs.org/";
+}
+</script>
+<script>
+function addFacebook() {
+    window.location="https://www.facebook.com/sharer/sharer.php?u=www.iamdavidturner.tech";
+}
+</script>
 </html>
