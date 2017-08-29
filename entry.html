@@ -25,13 +25,6 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
@@ -64,39 +57,36 @@
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
               <div class="minilogo"></div>
               <div>
-                <strong>The Newist</strong>
+                <strong>David Turner</strong>
                 <span>2 days ago</span>
               </div>
               <div class="section-spacer"></div>
               <div class="meta__favorites">
-                425 <i class="material-icons" role="presentation">favorite</i>
+                425 <i class="material-icons" onClick="addLike();"role="presentation">favorite</i>
                 <span class="visuallyhidden">favorites</span>
               </div>
               <div>
-                <i class="material-icons" role="presentation">bookmark</i>
+                <i class="material-icons" onClick="addBookmark();" role="presentation">bookmark</i>
                 <span class="visuallyhidden">bookmark</span>
               </div>
               <div>
-                <i class="material-icons" role="presentation">share</i>
+                <i class="material-icons" onClick="addFacebook();" role="presentation">share</i>
                 <span class="visuallyhidden">share</span>
               </div>
             </div>
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
-              <p>
-                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
-              </p>
-              <p>
-                Qui ullamco consectetur aute fugiat officia ullamco proident Lorem ad irure. Sint eu ut consectetur ut esse veniam laboris adipisicing aliquip minim anim labore commodo. Incididunt eu enim enim ipsum Lorem commodo tempor duis eu ullamco tempor elit occaecat sit. Culpa eu sit voluptate ullamco ad irure. Anim commodo aliquip cillum ea nostrud commodo id culpa eu irure ut proident. Incididunt cillum excepteur incididunt mollit exercitation fugiat in. Magna irure laborum amet non ullamco aliqua eu. Aliquip adipisicing dolore irure culpa aute enim. Ullamco quis eiusmod ipsum laboris quis qui.
-              </p>
-              <p>
-                Cillum ullamco eu cupidatat excepteur Lorem minim sint quis officia irure irure sint fugiat nostrud. Pariatur Lorem irure excepteur Lorem non irure ea fugiat adipisicing esse nisi ullamco proident sint. Consectetur qui quis cillum occaecat ullamco veniam et Lorem cupidatat pariatur. Labore officia ex aliqua et occaecat velit dolor deserunt minim velit mollit irure. Cillum cupidatat enim officia non velit officia labore. Ut esse nisi voluptate et deserunt enim laborum qui magna sint sunt cillum. Id exercitation labore sint ea labore adipisicing deserunt enim commodo consectetur reprehenderit enim. Est anim nostrud quis non fugiat duis cillum. Aliquip enim officia ad commodo id.
-              </p>
-            </div>
+              <h2 id="h.p_h5cPN3mYnpHr">Programming with Android Studio..</h2>
+              <p id="h.p_zlWwxotfoAo4">I love Android Studio, almost as much as XCode for IOS.  The setting of break points and ability to step through troublesome lines of code make this the software of choice for Android apps. And rightly so - Android Studio is the official IDE software for Android apps and will continue to be upgraded for years to come.  For £25 you have the bonus of being able to upload apps to Play Store for life! Not bad compared to iTunes yearly fee for the same service. Don't forget though, a barrage of automated tests from either store are no substitute for human experience tests too! And better still tests by fellow programmers through each branch and push and pull of a project. Github served in-house for security can help you smoothly roll out your genius, creation!</p>
+              <h1 id="h.p_xp8ScNjOll3Q">Technology of the month...</h1>
+              <p id="h.p_mbZsT5HDl4xH">If you want to know which pages are the most popular, which menus stump even the most intrepid visitor or what to provide more of what your target audience want I recommend Adobe Analytics. Simply add tags to each element on a page you want to monitor and then Adobe Analytics will feed a wealth of information back in a handy web browser interface. To add Adobe Analytics to a webpage it just takes a tag in less than one line of code. <iframe width="560" height="315" src="https://www.youtube.com/embed/q6Wn0yXoHik?list=PL2tCx83mn7GujxLS8lZ3NqbdYz_9tnKG7?ecver=1" frameborder="0" allowfullscreen></iframe></p>
+              <p>&nbsp;</p>
+              <p>Contact me through <a href="https://www.linkedin.com/in/david-turner-51ba44130">LinkedIn</a> or <a href="mailto:rachelanddavids@gmail.com">email</a> for more </p>
+</div>
             <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
               <form>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                   <textarea rows=1 class="mdl-textfield__input" id="comment"></textarea>
-                  <label for="comment" class="mdl-textfield__label">Join the discussion</label>
+                  <label for="comment" class="mdl-textfield__label">Join the discussion, log in on the link and password I gave you if I've done a job for you.</label>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                   <i class="material-icons" role="presentation">check</i><span class="visuallyhidden">add comment</span>
@@ -105,14 +95,11 @@
               <div class="comment mdl-color-text--grey-700">
                 <header class="comment__header">
                   <img src="images/co1.jpg" class="comment__avatar">
-                  <div class="comment__author">
-                    <strong>James Splayd</strong>
-                    <span>2 days ago</span>
+                  <div class="comment__author"><strong>Claire Chee </strong><span>2 days ago</span>
                   </div>
                 </header>
                 <div class="comment__text">
-                  In in culpa nulla elit esse. Ex cillum enim aliquip sit sit ullamco ex eiusmod fugiat. Cupidatat ad minim officia mollit laborum magna dolor tempor cupidatat mollit. Est velit sit ad aliqua ullamco laborum excepteur dolore proident incididunt in labore elit.
-                </div>
+                  That was great work on the AWS, I'm impressed how you managed to set things so quickly and testmmgmgm</div>
                 <nav class="comment__actions">
                   <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                     <i class="material-icons" role="presentation">thumb_up</i><span class="visuallyhidden">like comment</span>
@@ -191,7 +178,23 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
+    <a href="https://github.com/DavidTurnerFS/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
+  <script>
+function addFacebook() {
+    window.location="https://www.facebook.com/sharer/sharer.php?u=www.iamdavidturner.tech";
+}
+</script>
+  <script>
+function addBookmark() {
+    window.location="https://www.linkedin.com/shareArticle?mini=true&url=David%20Turner%20-%20Great%20Programmer!&title=Programming&summary=David%20Turner%20is%20an%20avid%20programmer%20in%20many%20different%20types%20of%20languages%20from%20front%20end%20HTML,%20CSS,%20Javascript%20and%20Java%20to%20back%20end%20server%20language%20and%20database%20architecture.&source=www.iamdavidturner.tech";
+}
+</script>
+  <script>
+function addLike() {
+    window.location="https://twitter.com/home?status=Read%20more%20about%20programmer%20David%20Turner";
+	var myWindow = window.open("", "", "width=200,height=100");
+}
+</script>
 </html>
